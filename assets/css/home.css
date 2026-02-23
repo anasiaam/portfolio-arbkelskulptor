@@ -248,41 +248,47 @@ html, body {
 @media (max-width: 640px) {
     /* Still 3-column, keep shrinking */
     .top-nav {
-        padding: 18px 20px;
+        padding: 18px 28px;
     }
 
     .nav-links {
-        gap: 16px;
+        gap: 20px;
     }
 
     .nav-links a {
-        font-size: 9px;
-        letter-spacing: 1.5px;
+        font-size: 10px;
+        letter-spacing: 2px;
     }
 
     .logo-mark {
-        width: 38px;
-        height: 38px;
-        font-size: 14px;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
     }
 
     .hero-body {
-        padding: 0 20px;
+        padding: 0 28px;
+    }
+
+    .eyebrow {
+        font-size: 11px;
+        margin-bottom: 8px;
     }
 
     .hero-title {
-        font-size: clamp(36px, 9vw, 72px);
+        font-size: clamp(40px, 9vw, 72px);
         letter-spacing: 3px;
     }
 
     .gold-rule {
-        height: 36px;
-        margin: 24px auto;
+        height: 44px;
+        margin: 30px auto;
     }
 
     .sub-label {
-        font-size: 9px;
+        font-size: 10px;
         letter-spacing: 3px;
+        margin-top: 8px;
     }
 }
 
@@ -290,7 +296,57 @@ html, body {
 @media (max-width: 480px) {
     /* Still 3-column: left links | logo | right links — never stacked */
     .top-nav {
-        padding: 14px 12px;
+        padding: 16px 20px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .logo-mark {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .nav-dot {
+        display: none;
+    }
+
+    .eyebrow {
+        font-size: 10px;
+        letter-spacing: 4px;
+        margin-bottom: 8px;
+    }
+
+    .hero-title {
+        font-size: clamp(32px, 9.5vw, 52px);
+        letter-spacing: 2px;
+        line-height: 1;
+        margin-top: 8px;
+    }
+
+    .gold-rule {
+        height: 38px;
+        margin: 26px auto;
+    }
+
+    .sub-label {
+        font-size: 9px;
+        letter-spacing: 2.5px;
+        margin-top: 8px;
+    }
+}
+
+/* ── Very small screens (≤ 360px) ── */
+@media (max-width: 360px) {
+    .top-nav {
+        padding: 14px 14px;
     }
 
     .nav-links {
@@ -303,61 +359,18 @@ html, body {
     }
 
     .logo-mark {
-        width: 34px;
-        height: 34px;
-        font-size: 13px;
-    }
-
-    .nav-dot {
-        display: none;
-    }
-
-    .eyebrow {
-        font-size: 9px;
-        letter-spacing: 4px;
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
     }
 
     .hero-title {
-        font-size: clamp(28px, 9.5vw, 50px);
-        letter-spacing: 2px;
-        line-height: 1;
-        margin-top: 14px;
-    }
-
-    .gold-rule {
-        height: 30px;
-        margin: 18px auto;
+        font-size: 28px;
+        letter-spacing: 1px;
     }
 
     .sub-label {
-        font-size: 7px;
+        font-size: 8px;
         letter-spacing: 2px;
-    }
-}
-
-/* ── Very small screens (≤ 360px) ── */
-@media (max-width: 360px) {
-    .top-nav {
-        padding: 12px 10px;
-    }
-
-    .nav-links {
-        gap: 8px;
-    }
-
-    .nav-links a {
-        font-size: 7px;
-        letter-spacing: 1px;
-    }
-
-    .logo-mark {
-        width: 30px;
-        height: 30px;
-        font-size: 11px;
-    }
-
-    .hero-title {
-        font-size: 26px;
-        letter-spacing: 1px;
     }
 }
