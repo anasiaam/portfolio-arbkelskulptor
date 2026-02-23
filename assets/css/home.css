@@ -217,12 +217,18 @@ html, body {
 
 /* ── Tablet (≤ 900px) ── */
 @media (max-width: 900px) {
+    .hero {
+        background-image: url("../images/bckg_mobile.png");
+        background-position: center top;
+    }
+
+    /* Keep 3-column nav, just tighten padding and gaps */
     .top-nav {
-        padding: 24px 36px;
+        padding: 22px 32px;
     }
 
     .nav-links {
-        gap: 32px;
+        gap: 28px;
     }
 
     .nav-dot {
@@ -240,30 +246,30 @@ html, body {
 
 /* ── Large mobile / small tablet (≤ 640px) ── */
 @media (max-width: 640px) {
+    /* Still 3-column, keep shrinking */
     .top-nav {
-        padding: 20px 24px;
+        padding: 18px 20px;
     }
 
     .nav-links {
-        gap: 20px;
+        gap: 16px;
     }
 
     .nav-links a {
-        font-size: 10px;
-        letter-spacing: 2px;
+        font-size: 9px;
+        letter-spacing: 1.5px;
     }
 
     .logo-mark {
-        width: 40px;
-        height: 40px;
-        font-size: 15px;
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
     }
 
     .hero-body {
-        padding: 0 24px;
+        padding: 0 20px;
     }
 
-    /* Tighten title so letters don't clip */
     .hero-title {
         font-size: clamp(36px, 9vw, 72px);
         letter-spacing: 3px;
@@ -282,47 +288,24 @@ html, body {
 
 /* ── Mobile (≤ 480px) ── */
 @media (max-width: 480px) {
-    /*
-     * Nav layout:
-     *   Row 1 — logo centred  (flex: 0 0 100% forces its own line)
-     *   Row 2 — all links side by side, centred
-     */
+    /* Still 3-column: left links | logo | right links — never stacked */
     .top-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        column-gap: 24px;
-        row-gap: 12px;
-        padding: 20px 20px 10px;
-    }
-
-    /* Logo takes the full first row */
-    .logo-mark {
-        flex: 0 0 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 38px;
-        height: 38px;
-        font-size: 14px;
-        margin: 0 auto;
-    }
-
-    /* Both nav groups sit side by side on row 2 */
-    .nav-left,
-    .nav-right {
-        flex: unset;
-        justify-content: center;
+        padding: 14px 12px;
     }
 
     .nav-links {
-        gap: 16px;
+        gap: 10px;
     }
 
     .nav-links a {
-        font-size: 9px;
-        letter-spacing: 2px;
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .logo-mark {
+        width: 34px;
+        height: 34px;
+        font-size: 13px;
     }
 
     .nav-dot {
@@ -335,32 +318,46 @@ html, body {
     }
 
     .hero-title {
-        font-size: clamp(30px, 10vw, 52px);
+        font-size: clamp(28px, 9.5vw, 50px);
         letter-spacing: 2px;
         line-height: 1;
         margin-top: 14px;
     }
 
     .gold-rule {
-        height: 32px;
-        margin: 20px auto;
+        height: 30px;
+        margin: 18px auto;
     }
 
     .sub-label {
-        font-size: 8px;
+        font-size: 7px;
         letter-spacing: 2px;
     }
 }
 
 /* ── Very small screens (≤ 360px) ── */
 @media (max-width: 360px) {
-    .hero-title {
-        font-size: 28px;
-        letter-spacing: 1px;
+    .top-nav {
+        padding: 12px 10px;
+    }
+
+    .nav-links {
+        gap: 8px;
     }
 
     .nav-links a {
-        font-size: 8px;
-        letter-spacing: 1.5px;
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .logo-mark {
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .hero-title {
+        font-size: 26px;
+        letter-spacing: 1px;
     }
 }
