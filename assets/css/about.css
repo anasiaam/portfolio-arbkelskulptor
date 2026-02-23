@@ -448,6 +448,22 @@ h1.about {
     margin-bottom: 4px;
 }
 
+
+/* ── FOOTER ── */
+.site-footer {
+    background: var(--dark-mid);
+    border-top: 1px solid var(--border);
+    width: 100%;
+    padding: 20px 40px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(250,247,242,0.28);
+}
+
 /* ════════════════════════════
    RESPONSIVE
    ════════════════════════════ */
