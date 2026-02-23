@@ -347,6 +347,10 @@ nav {
     nav { padding: 16px 24px; justify-content: center; }
     .nav-list li:not(:last-child)::after { margin: 0 14px; }
 
+    .site-footer {
+        padding: 16px 12px; /* reduce side gaps */
+    }
+
     .page-title { letter-spacing: 4px; }
     .contact-section { padding: 80px 24px 60px; }
 
@@ -361,6 +365,10 @@ nav {
 
     .page-title { letter-spacing: 2px; }
     .contact-section { padding: 70px 16px 50px; }
+
+    .site-footer {
+        padding: 16px 12px; /* reduce side gaps */
+    }
 
     .info-item {
         flex-direction: column;

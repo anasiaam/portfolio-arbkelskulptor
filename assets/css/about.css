@@ -482,6 +482,10 @@ h1.about {
         justify-content: center;
     }
 
+    .site-footer {
+        padding: 16px 12px; /* reduce side gaps */
+    }
+
     nav ul li:not(:last-child)::after {
         margin: 0 14px;
     }
@@ -552,6 +556,10 @@ h1.about {
         margin: 0 10px;
         width: 3px;
         height: 3px;
+    }
+
+    .site-footer {
+        padding: 16px 12px; /* reduce side gaps */
     }
 
     nav a {

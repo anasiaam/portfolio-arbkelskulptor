@@ -238,6 +238,10 @@ html, body {
         background-position: center top;
     }
 
+    .site-footer {
+        padding: 16px 12px; /* reduce side gaps */
+    }
+
     /* Keep 3-column nav, just tighten padding and gaps */
     .top-nav {
         padding: 22px 32px;
@@ -269,6 +273,10 @@ html, body {
 
     .nav-links {
         gap: 20px;
+    }
+
+    .site-footer {
+        padding: 16px 12px; /* reduce side gaps */
     }
 
     .nav-links a {
@@ -318,6 +326,10 @@ html, body {
 
     .nav-links {
         gap: 14px;
+    }
+
+    .site-footer {
+        padding: 16px 12px; /* reduce side gaps */
     }
 
     .nav-links a {
@@ -372,6 +384,10 @@ html, body {
 
     .nav-links {
         gap: 10px;
+    }
+
+    .site-footer {
+        padding: 16px 12px; /* reduce side gaps */
     }
 
     .nav-links a {
