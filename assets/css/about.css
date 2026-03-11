@@ -91,7 +91,10 @@ nav a::after {
     transition: width 0.35s ease;
 }
 
-nav a:hover { color: var(--cream); }
+nav a:hover,
+nav a.nav-active { color: var(--cream); }
+
+nav a.nav-active::after,
 nav a:hover::after { width: 100%; }
 
 nav a svg {
@@ -136,7 +139,6 @@ nav a svg {
     overflow: hidden;
 }
 
-/* subtle texture lines */
 .row1::before {
     content: "";
     position: absolute;
@@ -156,7 +158,6 @@ nav a svg {
     gap: 24px;
 }
 
-/* eyebrow above the title */
 .about-eyebrow {
     font-family: 'Raleway', sans-serif;
     font-size: 10px;
@@ -176,7 +177,6 @@ h1.about {
     line-height: 1;
 }
 
-/* gold rule below title */
 .about-content1::after {
     content: "";
     width: 1px;
@@ -196,7 +196,6 @@ h1.about {
     position: relative;
 }
 
-/* vignette on portrait */
 .about-col-1::after,
 .about-col-4::after {
     content: "";
@@ -298,7 +297,6 @@ h1.about {
     pointer-events: all;
 }
 
-/* ── Name heading ── */
 .page-panel .name {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(32px, 4vw, 56px);
@@ -308,7 +306,6 @@ h1.about {
     margin-bottom: 1rem;
 }
 
-/* gold line under name */
 .page-panel .name::after {
     content: "";
     display: block;
@@ -318,7 +315,6 @@ h1.about {
     margin: 16px auto 0;
 }
 
-/* ── Bio text ── */
 .page-panel p {
     font-family: 'Raleway', sans-serif;
     font-size: clamp(13px, 1.5vw, 15px);
@@ -330,7 +326,6 @@ h1.about {
     margin: 1.5rem auto 2rem;
 }
 
-/* ── Toggle button ── */
 .page-btn {
     width: 42px;
     height: 42px;
@@ -483,7 +478,7 @@ h1.about {
     }
 
     .site-footer {
-        padding: 16px 12px; /* reduce side gaps */
+        padding: 16px 12px;
     }
 
     nav ul li:not(:last-child)::after {
@@ -559,7 +554,7 @@ h1.about {
     }
 
     .site-footer {
-        padding: 16px 12px; /* reduce side gaps */
+        padding: 16px 12px;
     }
 
     nav a {
