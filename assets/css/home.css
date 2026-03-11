@@ -629,6 +629,10 @@ nav a svg {
         justify-content: center;
     }
 
+    .hero-bg-img {
+        background-image: url("../images/bckg_mobile.png");
+    }
+
     nav ul li:not(:last-child)::after { margin: 0 14px; }
 
     .hero-rule { display: none; }
